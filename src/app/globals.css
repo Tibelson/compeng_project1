@@ -1,26 +1,172 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+lets use template: * {
+  padding: 20px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+body, html {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.block {
+  width: 50%;
+  height: 100%;
 }
+
+.hidden {
+  display: none;
+}
+
+#alert{
+  width:  100%;
+  height: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-12%);
+  text-align: left;
+}
+#alert h1{
+  font-size: 60px;
+  line-height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#alert h2{
+  font-size: 30px;
+}
+
+.done{
+  animation-duration: 1s ;
+  animation-name: Slide;
+}
+
+/*@keyframes Slide {*/
+/*  from{*/
+/*    width: 0%;*/
+/*  }*/
+/*  to{*/
+/*    width: 50%;*/
+/*  }*/
+/*}*/
+
+/*.btn{*/
+/*  animation-duration: 1s;*/
+/*  animation-name: btnSlide;*/
+/*}*/
+
+/*@keyframes btnSlide {*/
+/*  0% {*/
+/*    background-color: pink;*/
+/*  }*/
+/*  20%{*/
+/*    background-color: PaleVioletRed;*/
+/*  }*/
+/*  40%{*/
+/*    background-color: MediumOrchid;*/
+/*  }*/
+/*  60%{*/
+/*    background-color: RebeccaPurple;*/
+/*  }*/
+/*  80%{*/
+/*    background-color:	HotPink;*/
+/*  }*/
+/*  100%{*/
+/*    background-color: LightSalmon;*/
+/*  }*/
+/*}*/
+
+/*#image {*/
+/*  background-image: url("/university-of-ghana-seeklogo.png");*/
+/*  background-size: auto 100%;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+#alert img {
+  display: block;
+  margin: auto 0;
+}
+
+#form #form_block {
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+form {
+  width: 70%;
+  height: 100%;
+}
+
+form h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 55px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+form input {
+  width: 86%;
+  height: 13%;
+  border: 2px solid black;
+  border-radius: 100px;
+  outline: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 6%;
+  margin-left: 7%;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+form input:hover {
+  border: 3px solid black;
+}
+
+form button {
+  width: 50%;
+  height: 13%;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  outline: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 0 20px;
+  background-color: #000;
+  margin-left: 25%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+form button:hover {
+  border: none;
+  background-color: rgb(9, 56, 68)
+}
+/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+
+
+
+

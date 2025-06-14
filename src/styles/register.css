@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #007BFF;
+    --background-color: #f4f7fa;
+    --form-bg: #ffffff;
+    --text-color: #1a1a1a;
+    --error-color: #dc3545;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    /*--transition: all 0.3s ease;*/
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+}
+
+.form-box {
+    background: var(--form-bg);
+    border-radius: 20px;
+    padding: 3rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: var(--shadow);
+    /*transition: var(--transition);*/
+}
+
+.form-box h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 1rem;
+    /*transition: var(--transition);*/
+    background: #f9fafb;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+button {
+    padding: 0.75rem;
+    margin: 50px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    /*transition: var(--transition);*/
+}
+
+button:hover:not(:disabled) {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #6c757d;
+    cursor: not-allowed;
+}
+
+p {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+p a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+/*@media (max-width: 480px) {*/
+/*    .form-box {*/
+/*        padding: 1.5rem;*/
+/*        max-width: 100%;*/
+/*    }*/
+
+/*    .form-box h1 {*/
+/*        font-size: 1.5rem;*/
+/*    }*/
+
+/*    button {*/
+/*        font-size: 0.9rem;*/
+/*    }*/
+/*}*/
